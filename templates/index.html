@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <title>Input Autocomplete Suggestions Demo</title>
+  <link rel="shortcut icon" href="http://designshack.net/favicon.ico">
+  <link rel="icon" href="http://designshack.net/favicon.ico">
+  <link rel="stylesheet" type="text/css" media="all" href="../static/style.css">
+  <script type="text/javascript" src="../static/js/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript" src="../static/js/jquery.autocomplete.min.js"></script>
+  <script type="text/javascript" src="../static/js/currency-autocomplete.js"></script>
+         <script src="../static/js/index.js"></script>
+
+</head>
+
+<       body>
+  <div id="topbar"> </div>
+  <div id="w">
+    <div id="content">
+     <center> <h1>Games Statistic Search</h1></center>
+      <div>
+      <center>  <p>Comments on various computer games around the world.Check it out <a href="http://127.0.0.1:5000/">database</a> on Gameaction.</p></center>
+</div>
+      <div id="searchfield">
+        <form action="/games" method="POST">
+
+            <input type="text" name="currency" class="biginput" id="autocomplete" >
+            <input type="submit" value="Search"class="myButton" id="search_button"/>
+
+        </form>
+      </div><!-- @end #searchfield -->
+
+      <div id="outputbox">
+         <center><strong><p style="color: #df2020" id="outputcontent">We have {{ getCountGame }} game statistics </p></strong></center>
+      </div>
+    </div><!-- @end #content -->
+  </div><!-- @end #w -->
+</body>
+</html>
