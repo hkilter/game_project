@@ -442,12 +442,11 @@ function ulke(xxx){
            {"code": "ZW", "name": "Zimbabwe", "value": 12754378, "color": "#de4c4f"}];
 
       var mapData = games;
-      alert(games.game_id);
 
 
 // get min and max values
        var minBulletSize = 3;
-       var maxBulletSize = 70;
+       var maxBulletSize = 10;
        var min = Infinity;
        var max = -Infinity;
       for (var i = 0; i < mapData.length; i++) {
@@ -485,7 +484,7 @@ function ulke(xxx){
                "color": "#de4c4f",
                "longitude": latlong[id].longitude,
                "latitude": latlong[id].latitude,
-               "title": dataItem.game_name,
+               "title": dataItem.country_name,
                "value": value
            });
        }
@@ -495,12 +494,13 @@ function ulke(xxx){
            "type": "map",
            "projection": "eckert6",
            "titles": [{
-               "text": "Population of the World in 2011",
+               "text": "",
                "size": 14
-           }, {
-               "text": "source: Gapminder",
-               "size": 11
-           }],
+           },
+               {
+               "text": "",
+               "size": 11}
+           ],
            "areasSettings": {
                //"unlistedAreasColor": "#000000",
                //"unlistedAreasAlpha": 0.1
