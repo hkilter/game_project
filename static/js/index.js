@@ -73,7 +73,7 @@ function elma(xxx){
               {label: 'Positive Plus',data: poz_plus,backgroundColor: "rgba(70, 156, 53, 1)"},
               {label: 'Negative',data: neg,backgroundColor: "rgba(53, 156, 149, 1)"},
               {label: 'Negative Plus',data: neg_plus,backgroundColor: "rgba(67, 142, 137, 1)"},
-              {label: 'None',data: none_s,backgroundColor: "rgba(229, 161, 236, 0.7)"},
+              {label: 'Noncommittal',data: none_s,backgroundColor: "rgba(229, 161, 236, 0.7)"},
               {label: 'Neutral',data: neutral,backgroundColor: "rgba(64, 172, 191, 0.59)"}
           ]
         }

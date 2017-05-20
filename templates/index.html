@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="en-US">
 <head>
+
+
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
   <title>Games Statistic Search</title>
   <link rel="shortcut icon" href="http://designshack.net/favicon.ico">
@@ -9,7 +11,11 @@
   <script type="text/javascript" src="../static/js/jquery-1.9.1.min.js"></script>
   <script type="text/javascript" src="../static/js/jquery.autocomplete.min.js"></script>
   <script type="text/javascript" src="../static/js/currency-autocomplete.js"></script>
-         <script src="../static/js/index.js"></script>
+
+    <script src="../static/js/index.js"></script>
+    <script src="../static/js/country_count.js"></script>
+    <script src="../static/js/img.js"></script>
+
 	<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -29,18 +35,26 @@
     <div id="content">
      <center> <h1>Games Statistic Search</h1></center>
       <div>
-      <center>  <p>Comments on various computer games around the world.Check it out <a href="http://127.0.0.1:5000/">database</a> on Gameaction.</p></center>
+      <center>  <p>This site is currently in <a href="http://gamerik.com/">beta</a></p></center>
 </div>
       <div id="searchfield">
         <form action="/games" method="POST">
 
             <input type="text" name="currency" class="biginput" id="autocomplete" >
             <input type="submit" value="Search"class="myButton" id="search_button"/>
-
         </form>
+          <p align="left"
+             style="margin-left:2em;
+             margin-top: 0.5em;
+             font-size:13px;
+             font-family: Verdana, sans-serif;
+             color: #f2f2f2"
+             id="outputcontent">You can search a game like Call of Duty,Prey etc. </p>
+
       </div><!-- @end #searchfield -->
 
       <div id="outputbox">
+
          <center><strong><p style="color: #df2020" id="outputcontent">We have {{ getCountGame }} game statistics </p></strong></center>
       </div>
     </div><!-- @end #content -->

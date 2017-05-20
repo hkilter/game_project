@@ -5,12 +5,12 @@ $( document ).ready(function(){
 
 function ulke(xxx){
   var games = [];
-  var labels=[];
-  var c_value=[];
-  var country_name=[];
-  var ids=[];
-  var country_code=[];
-  var labels=[];
+  // var labels=[];
+  // var c_value=[];
+  // var country_name=[];
+  // var ids=[];
+  // var country_code=[];
+  // var labels=[];
 
 
   $.getJSON( "http://kbora.xyz/game_county.php?game_id=" + xxx, function( data ) {
@@ -494,7 +494,7 @@ function ulke(xxx){
            "type": "map",
            "projection": "eckert6",
            "titles": [{
-               "text": "",
+               "text": "Most played countries",
                "size": 14
            },
                {
